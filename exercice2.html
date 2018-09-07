@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercice 2</title>
+	<link rel="stylesheet" href="exercice2.css">
+</head>
+<body>
+	<div id="exercice">
+	</div>
+<button onclick="haut();">Bouton 1</button>
+<button onclick="vert();">Bouton 2</button>
+<button onclick="initiale();">Bouton 3</button>
+<button onclick="disparu();">Bouton 4</button>
+<button onclick="apparait();">Bouton 5</button>
+<script>
+	function haut()
+	{
+		var rectangle=document.getElementById('exercice');
+		rectangle.style.height='110px';
+	}
+	function vert()
+	{
+		var rectangle=document.getElementById('exercice');
+		rectangle.style.backgroundColor="green";
+	}
+	function initiale()
+	{
+		var rectangle=document.getElementById('exercice');
+		rectangle.style.backgroundColor="blue";
+	}
+	function disparu()
+	{
+		var rectangle=document.getElementById('exercice');
+		rectangle.style.visibility='hidden';
+	}
+	function apparait()
+	{
+		var rectangle=document.getElementById('exercice');
+		rectangle.style.visibility='visible';
+	}
+
+	
+</script>
+</body>
+</html>
